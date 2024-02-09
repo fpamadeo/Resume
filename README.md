@@ -1,5 +1,9 @@
 LaTeX code for my personal single-page, one-column resume.
 
+### NOTE:
+
+PLease let me know any issues/enhancements, formatting or otherwise, that you notice.
+
 ### References
 
 - Followed tips and best practices on [the r/EngineeringResumes subreddit](https://www.reddit.com/r/EngineeringResumes/wiki/index/)
