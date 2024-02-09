@@ -1,0 +1,128 @@
+%-------------------------
+% Resume in Latex
+% Author : Francis Paul Amadeo
+% Based off of: https://www.overleaf.com/project/65a471c32f9ee1db3a96cc75
+%------------------------
+
+\documentclass[11pt,letterpaper]{article}
+% \documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+% \usepackage[top=0.4in,bottom=0.4in,left=0.5in,right=0.5in]{geometry}
+% Select font (comment out lines 6-9 to use Computer Modern)
+%\usepackage{charter}
+% \usepackage[default]{lato}
+% \usepackage[sfdefault]{carlito}
+ \usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{comment}
+\raggedright
+\pagestyle{empty}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings
+\titleformat{\section}{\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-8pt}]
+
+% format bullet points
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\centerline{\Huge Francis Paul Amadeo}
+\centerline{francispaul.dev@gmail.com | linkedin.com/in/franpaul/}
+% --\centerline{francispaul.dev@gmail.com | francispaul.dev}
+
+%-----------EXPERIENCE-----------------
+\section*{EXPERIENCE}
+
+\textbf{Software developer} Epic Systems -- Verona, WI \hfill Feb 2020 -- June 2023 \\
+\vspace{-10pt}
+\begin{itemize}
+  \item Decreased the review process for training to be billed from 4 weeks to 2 weeks by automating multiple manual steps. This also allowed the accounting team to rotate half of the team to other tasks
+  \item Redesigned the go-live scheduling tool with C\#, .NET, and Preact to include the majority of the tasks admins need to complete on a single page, all while preserving workflow and security guardrails.
+  \item Streamlined admins' communications with trainees by redesigning Epic's e-learning hosting site with MSSQL, C\#, and .NET Core to be SCORM-compliant, allowing admins to monitor trainee progress.
+  \item As the technical point person for Training Billing Tools, reviewed designs, analyzed functionalities and cross-dependencies, and developed and maintained tools, reports, and databases for stakeholders.
+        %\item Completed software development life cycle for projects as lead designer and lead developer.
+        %\item Coordinated deployments of new software, feature updates, and fixes.
+        %\item Met with SMEs, stakeholders and developers regularly to ensure project requirements and timelines are met by reducing technical complexity without sacrificing functionality to the software.
+        % \item Translated technical concepts, information, and workflows into terms and proofs of concept that all parties could easily understand.
+        %\item Developed conversion and system implementation plans.
+        %\item Went on rotational support for the EpicU application.
+
+\end{itemize}
+\textbf{Computer Engineering and Intern} UIC College of Engineering -- Chicago, IL \hfill July 2019 -- Aug 2019 \\
+\vspace{-10pt}
+\begin{itemize}
+  \item Designed and implemented the python-based circuit simulator used for UIC's first offering of ECE 464 (Testing and Reliability of Digital Systems)
+  \item provided detailed documentation to allow students to clearly understand the program.
+\end{itemize}
+\begin{comment}
+\textbf{Engineering Student Ambassador and Mentor} UIC College of Engineering -- Chicago, IL \hfill July 2019 -- Aug 2019 \\
+\vspace{-10pt}
+\begin{itemize}
+  \item Taught review classes and workshops on Math, Physics, Chemistry, Robotics, Circuits,among others, for 18 incoming freshmen.
+  \item Guided my personal mentee’s success and first year experience at the University
+\end{itemize}
+\end{comment}
+
+%-----------PROJECTS-----------------
+\section{PROJECTS}
+\textbf{Project Stella} \hfill
+%engineering.uic.edu/news-stories/strong-showing-by-edt-robots-at-engineering-competition/ \\
+\vspace{-10pt}
+\begin{itemize}
+  \item Won 2nd place in the Midwestern Robotics Design Competition 2019 at UIUC.
+  \item As the software lead,  oversaw and delegated various electrical and programming duties for the electrical and CS team.
+\end{itemize}
+\textbf{Print-a-Part} \\
+\vspace{-10pt}
+\begin{itemize}
+  \item  Initiated and oversaw the relaunch of Chicago EDT's outreach program, Print-a-Part, where students can submit their 3D CAD designs and get them printed and sent for free.
+\end{itemize}
+\begin{comment}
+\textbf{NASA Robot Mining Competition -- Team Lunabotics} \\
+\vspace{-10pt}
+\begin{itemize}
+  \item  Initiated and oversaw the conversion of Chicago EDT's  existing assets from Altium Designer to Autodesk EAGLE \\
+\end{itemize}
+\end{comment}
+
+%
+%--------SKILLS------------
+\section*{Skills}
+\textbf{Languages:} C, C++, C\#, HTML, Javascript, Typescript, Python, MSSQL, C, VHDL, Assembly \\
+\textbf{Frameworks:} .NET,.NET Core, Angular, React.js \\
+\textbf{Version Control:} Git, SVN \\
+\textbf{Standards:} ARIA, SCORM \\
+%\textbf{Spoken Languages:} Filipino
+%\textbf{Other:} Arduino, AutoCAD, PCB Design, Simulink,Roboteq, Chronicles \\
+
+
+%-------------------------------------------
+
+%-----------EDUCATION-----------------
+
+\section*{Education}
+\textbf{University of Illinois at Chicago} -- Bachelor of Science in Computer Engineering \hfill 2019 \\
+\vspace{-8pt}
+\begin{itemize}
+  \item Cum Laude Graduate
+\end{itemize}
+\textbf{College of Lake County} -- Associate Degree in Engineering Science  \hfill 2017
+\vspace{-8pt}
+\begin{itemize}
+  \item High Honors Graduate
+  \item Honoree of Certification of Academic Distinction
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
