@@ -1,5 +1,5 @@
 %-------------------------
-% Resume in Latex
+% Resume in LaTeX
 % Author : Francis Paul Amadeo
 % Based off of: https://www.overleaf.com/project/65a471c32f9ee1db3a96cc75
 %------------------------
@@ -24,12 +24,23 @@
 \input{glyphtounicode}
 \pdfgentounicode=1
 
+
+%-------------------------
+% Custom commands
 % format section headings
 \titleformat{\section}{\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-8pt}]
 
 % format bullet points
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
 \setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+%-------------------------------------------
+
+% format subheadings
+% {Title}{suplement text}{date/s}
+% OUTPUT:|#1_#2___________#3|
+\newcommand{\subheading}[3]{
+    \textbf{#1}{ #2 }{\hfill #3 \vspace{-2pt}}
+}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -42,9 +53,9 @@
 % --\centerline{francispaul.dev@gmail.com | francispaul.dev}
 
 %-----------EXPERIENCE-----------------
-\section*{EXPERIENCE}
 
-\textbf{Software developer} Epic Systems -- Verona, WI \hfill Feb 2020 -- June 2023 \\
+\section*{EXPERIENCE}
+\subheading{Software Developer}{ Epic Systems -- Verona, WI}{Feb 2020 -- June 2023 \\}
 \vspace{-10pt}
 \begin{itemize}
   \item Decreased the review process for training to be billed from 4 weeks to 2 weeks by automating multiple manual steps. This also allowed the accounting team to rotate half of the team to other tasks
@@ -59,70 +70,77 @@
         %\item Went on rotational support for the EpicU application.
 
 \end{itemize}
-\textbf{Computer Engineering and Intern} UIC College of Engineering -- Chicago, IL \hfill July 2019 -- Aug 2019 \\
+\vspace{-10pt}
+\subheading{Computer Engineering Intern}{UIC College of Engineering -- Chicago, IL}{ July 2019 -- Aug 2019 \\}
 \vspace{-10pt}
 \begin{itemize}
   \item Designed and implemented the python-based circuit simulator used for UIC's first offering of ECE 464 (Testing and Reliability of Digital Systems)
   \item provided detailed documentation to allow students to clearly understand the program.
 \end{itemize}
+\vspace{-10pt}
 \begin{comment}
-\textbf{Engineering Student Ambassador and Mentor} UIC College of Engineering -- Chicago, IL \hfill July 2019 -- Aug 2019 \\
+\subheading{Engineering Student Ambassador/Mentor}{UIC College of Engineering}{July 2019 -- Aug 2019 \\}
 \vspace{-10pt}
 \begin{itemize}
   \item Taught review classes and workshops on Math, Physics, Chemistry, Robotics, Circuits,among others, for 18 incoming freshmen.
   \item Guided my personal mentee’s success and first year experience at the University
 \end{itemize}
+\vspace{-10pt}
 \end{comment}
-
 %-----------PROJECTS-----------------
 \section{PROJECTS}
-\textbf{Project Stella} \hfill
+\subheading{Project Stella}{}{}
 %engineering.uic.edu/news-stories/strong-showing-by-edt-robots-at-engineering-competition/ \\
 \vspace{-10pt}
 \begin{itemize}
   \item Won 2nd place in the Midwestern Robotics Design Competition 2019 at UIUC.
-  \item As the software lead,  oversaw and delegated various electrical and programming duties for the electrical and CS team.
+  \item As the software lead,  oversaw and delegated various electrical and programming duties among the electrical and CS team.
 \end{itemize}
-\textbf{Print-a-Part} \\
+\vspace{-10pt}
+\subheading{Print-a-Part}{}{}
 \vspace{-10pt}
 \begin{itemize}
-  \item  Initiated and oversaw the relaunch of Chicago EDT's outreach program, Print-a-Part, where students can submit their 3D CAD designs and get them printed and sent for free.
+  \item  As Outreach Director, Initiated and oversaw the relaunch of Chicago EDT's outreach program, Print-a-Part, where students can submit their 3D CAD designs and get them printed and sent for free.
 \end{itemize}
+\vspace{-10pt}
 \begin{comment}
-\textbf{NASA Robot Mining Competition -- Team Lunabotics} \\
+\{}{}{NASA Robot Mining Competition}{-- Team Lunabotics} \\
 \vspace{-10pt}
 \begin{itemize}
   \item  Initiated and oversaw the conversion of Chicago EDT's  existing assets from Altium Designer to Autodesk EAGLE \\
 \end{itemize}
+\vspace{-10pt}
 \end{comment}
-
 %
 %--------SKILLS------------
-\section*{Skills}
-\textbf{Languages:} C, C++, C\#, HTML, Javascript, Typescript, Python, MSSQL, C, VHDL, Assembly \\
+\vspace{-10pt}
+\section*{SKILLS}
+\textbf{Languages:} C, C++, C\#, HTML, Javascript, Typescript, Python, MSSQL, LaTeX, VHDL, Assembly \\
 \textbf{Frameworks:} .NET,.NET Core, Angular, React.js \\
 \textbf{Version Control:} Git, SVN \\
 \textbf{Standards:} ARIA, SCORM \\
+%\textbf{Tools:} Visual Studio,Visual Studio Code,KDiff3,Visio,   \\
 %\textbf{Spoken Languages:} Filipino
 %\textbf{Other:} Arduino, AutoCAD, PCB Design, Simulink,Roboteq, Chronicles \\
-
-
 %-------------------------------------------
 
 %-----------EDUCATION-----------------
-
-\section*{Education}
-\textbf{University of Illinois at Chicago} -- Bachelor of Science in Computer Engineering \hfill 2019 \\
+\section*{EDUCATION}
+\subheading{University of Illinois at Chicago}{-- Bachelor of Science in Computer Engineering}{2019} \\
 \vspace{-8pt}
 \begin{itemize}
-  \item Cum Laude Graduate
+  \item Graduated \textit{cum laude}
+  \item IEEE-Eta Kappa Nu Honor Society Member \\ %etakappanu.students.uic.edu
+        %\item Tau Sigma National Honor Society Member
 \end{itemize}
-\textbf{College of Lake County} -- Associate Degree in Engineering Science  \hfill 2017
+\vspace{-10pt}
+\subheading{College of Lake County}{-- Associate Degree in Engineering Science}{2017 } \\
 \vspace{-8pt}
 \begin{itemize}
-  \item High Honors Graduate
+  \item Graduated with High Honors
   \item Honoree of Certification of Academic Distinction
+        %\item Phi Theta Kappa National Honor Society Member
 \end{itemize}
-
+\vspace{-10pt}
 %-------------------------------------------
 \end{document}
